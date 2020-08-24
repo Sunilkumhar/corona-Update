@@ -118,7 +118,7 @@ function leading(data){
 
     const top = document.querySelector('.top')
     top.innerHTML=`
-    <strong style="letter-spacing: 1px;font-size: 16px;"><marquee onmouseover="stop()" onmouseout="start()">
+    <strong style="letter-spacing: 1px;font-size: 16px;color:black;"><marquee onmouseover="stop()" onmouseout="start()">
       Top 3 countries with highest number of cases.  1. ${f.country} : ${(f.cases).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  2. ${s.country} : ${s.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}  3. ${t.country} : ${t.cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
     </marquee>
     </strong>
