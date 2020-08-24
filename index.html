@@ -21,7 +21,7 @@
     ::-webkit-scrollbar-thumb {
       background: black; 
       border-radius: 10px;
-    }
+    } 
     
     ::-webkit-scrollbar-thumb:hover {
       background: #575555; 
@@ -31,7 +31,7 @@
 
 <body>
   <div class="title">
-    <h1 class="display-2">COroUPDATE</h1>
+    COroUPDATE
   </div>
 
   <div class="lastUpdated"></div>
@@ -44,49 +44,41 @@
       <input type="search" name="search" id="myInput" placeholder="Search For Country..." aria-describedby="button-addon1" class="form-control border-0 ">
     </div>
   </form>
-
-  <table style="width:85%; height: 100%;margin-bottom: 0px;" id="stats1">
-    <thead>
-      <tr class="header" style="background-color: rgb(242, 247, 224);">
-        <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
-        <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
-        <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
-        <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
-        <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
   <div class="table_scroll">
-    <table style="width:100%; " id="stats">
-      <tbody></tbody>
+    <table style="width:100%;margin-bottom: 0px;" id="stats">
+      <thead>
+        <tr class="header" style="background-color: rgb(242, 247, 224);">
+          <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
+          <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
+          <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
+          <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
+          <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
+        </tr>
+      </thead>
     </table>
   </div>
-  <!-- <canvas id="myChart" width="10" height="5"></canvas> -->
-  <div id='map'></div>
 
-  <footer id="main-footer" style="margin-top: 3em;background-color: rgb(247, 236, 224);">
-    <div class="container" style="text-align: center;padding-top: 10px;padding-bottom: 10px;">
-      <div class="social-media" style="display: flex;margin-left: 25em;">
-        <span>
-          <h4>Follow me on:</h4>
-        </span>
-        <span>
-          <ul style="display: flex;list-style: none;">
-            <li><a href="https://www.linkedin.com/in/sunil-kumhar-02815/" class="btn btn1">
-                <i class="fa fa-linkedin" style="font-size: 1.5em;"></i>
-              </a></li>
-            <li><a href="https://github.com/Sunilkumhar" class="btn btn2">
-                <i class="fa fa-github" style="font-size: 1.5em;"></i>
-              </a></li>
-            <li><a href="https://www.instagram.com/skumhar_02/" class="btn btn2">
-                <i class="fa fa-instagram" style="font-size: 1.5em;"></i>
-              </a></li>
-          </ul>
-        </span>
+  <div id='map'></div>
+ 
+
+  <footer id="main-footer" style="margin-top: 5em;margin-bottom: 10px; background-color: rgb(247, 236, 224);">
+    <div  style="padding-top: 10px;padding-bottom: 10px;text-align: center;">
+      <div class="social-media" style="display: flex;">
+        <h4 style="margin: auto;">Follow me on:</h4>
+    
+        <ul style="display: flex;list-style: none;margin: auto;">
+          <li><a href="https://www.linkedin.com/in/sunil-kumhar-02815/" class="btn btn1">
+              <i class="fa fa-linkedin" style="font-size: 1.5em;"></i>
+            </a></li>
+          <li><a href="https://github.com/Sunilkumhar" class="btn btn2">
+              <i class="fa fa-github" style="font-size: 1.5em;"></i>
+            </a></li>
+          <li><a href="https://www.instagram.com/skumhar_02/" class="btn btn2">
+              <i class="fa fa-instagram" style="font-size: 1.5em;"></i>
+            </a></li>
+        </ul>
       </div>
-      <h5>Sunilkumhar © 2020 | CoroUpdate</h5>
+      <h5 >Sunilkumhar © 2020 | CoroUpdate</h5>
     </div>
   </footer>
 

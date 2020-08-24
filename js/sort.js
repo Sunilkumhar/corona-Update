@@ -25,7 +25,16 @@ function namesort(){
         }
         
         var x = document.getElementById("stats");
-        x.innerHTML = ``;
+        x.innerHTML = `
+        <thead>
+            <tr class="header" style="background-color: rgb(242, 247, 224);">
+            <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
+            <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
+            </tr>
+        </thead>`;
         data1.forEach(countrystat => {
 
             var row = x.insertRow(-1);
@@ -70,7 +79,16 @@ function casessort(){
             });
         }
         var x = document.getElementById("stats");
-        x.innerHTML = ``;
+        x.innerHTML = `
+        <thead>
+            <tr class="header" style="background-color: rgb(242, 247, 224);">
+            <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
+            <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
+            </tr>
+        </thead>`;
         data1.forEach(countrystat => {
 
             var row = x.insertRow(-1);
@@ -114,7 +132,16 @@ function activesort(){
         }
         
         var x = document.getElementById("stats");
-        x.innerHTML = ``;
+        x.innerHTML = `
+        <thead>
+            <tr class="header" style="background-color: rgb(242, 247, 224);">
+            <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
+            <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
+            </tr>
+        </thead>`;
         data1.forEach(countrystat => {
 
             var row = x.insertRow(-1);
@@ -158,7 +185,16 @@ function deathsort(){
         }
         
         var x = document.getElementById("stats");
-        x.innerHTML = ``;
+        x.innerHTML = `
+        <thead>
+            <tr class="header" style="background-color: rgb(242, 247, 224);">
+            <th style="text-decoration: underline;width: 14.5%;" ><h5>Country Flag</h5<i class="fa fa-sort"></i></th>
+            <th style="text-decoration: underline;width: 43%;" onclick="namesort()"><a ><h5 >Country Name</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="casessort()"><a ><h5>Total cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="activesort()"><a ><h5>Active Cases</h5><i class="fa fa-sort"></i></a></th>
+            <th style="text-decoration: underline;width: 15%;" onclick="deathsort()"><a ><h5>Deaths</h5><i class="fa fa-sort"></i></a></th>
+            </tr>
+        </thead>`;
         data1.forEach(countrystat => {
 
             var row = x.insertRow(-1);

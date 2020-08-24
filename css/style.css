@@ -3,6 +3,7 @@
   background-color: rgb(221, 216, 207);
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
+  font-size: 300%;
 }
 
 .lastUpdated h4{
@@ -25,11 +26,6 @@
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   padding-top: 5px;
 
-}
-
-#stats1 h5{
-  display: inline;
-  margin-right: 3px;
 }
 
 .worldwide{
@@ -115,29 +111,12 @@
   text-align: left;
  
 }
-
-#stats1 {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  margin: auto;
-  margin-top: 10px;
-  
-}
-#stats1 a{ cursor: pointer;}
-
-#stats1 td, #stats1 th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#stats1 tr:nth-child(even){background-color: #f2f2f2;margin-left: 50px;}
-
-#stats1 tr:hover {background-color: rgb(208, 229, 248);}stats
-#stats1 tr.header {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
- 
+table tr th {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: rgb(242, 247, 224);
 }
 
 .flag-size {
@@ -159,4 +138,13 @@
   margin-top: 60px;
   margin-bottom: 40px;
   
+}
+
+@media only screen and (max-width: 618px) {
+  .search{
+    margin-left: 10px;
+    /* padding-left: 10px; */
+    width: 95%;
+    box-sizing: border-box;
+  }
 }
