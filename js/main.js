@@ -126,24 +126,6 @@ function leading(data){
     
 }
 
-// function mapbox(data) {
-//     mapboxgl.accessToken = 'pk.eyJ1Ijoic3VuaWw3ODk0NTYxMjMiLCJhIjoiY2tiZzRid2RqMTF2NjJ4bnZzbzl2OHUwYiJ9.hxAKQkdzqvJEJBlAPVfQUQ';
-//     var map = new mapboxgl.Map({
-//         container: 'map',
-//         style: 'mapbox://styles/mapbox/dark-v10',
-//         center: [12.550343, 55.665957],
-//         zoom: 2,
-//         center: [45,30],
-//     });
-    
-//     data.forEach(i => {
-//         var marker = new mapboxgl.Marker()
-//         .setLngLat([i.countryInfo.long, i.countryInfo.lat])
-//         .addTo(map);
-//     });
-   
-// }
-
 var map;
 var infoWindow;
 
@@ -159,7 +141,7 @@ const mapCentre = {
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: mapCentre,
-        zoom: 2,
+        zoom: 2.5,
         styles: mapStyle
     });
     infoWindow = new google.maps.InfoWindow();
